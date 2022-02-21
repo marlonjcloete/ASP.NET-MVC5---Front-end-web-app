@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Location";
+}
+<style>
+    h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+       position: relative;
+       left: 200px;
+        height: 500px;
+        width: 700px;
+    }
+
+</style>
+<body style="background-color: whitesmoke">
+    <h1>Location</h1>
+    <p>Visit the store closest to you and pick up your favourite comic.</p>
+    <div>
+        <div id="map"></div>
+        <script>
+            let map;
+
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: { lat: -33.766750, lng: 25.399710 },
+                    zoom: 15,
+                });
+                const marker = new google.maps.Marker({
+                    position: { lat: -33.766750, lng: 25.399710 },
+                    map: map,
+                });
+                const marker1 = new google.maps.Marker({
+                    position: { lat: -33.771943, lng: 25.402787},
+                    map: map,
+                });
+                const marker2 = new google.maps.Marker({
+                    position: { lat: -33.766250, lng: 25.398280 },
+                    map: map,
+                });
+                const marker3 = new google.maps.Marker({
+                    position: { lat: -33.761100, lng: 25.404970 },
+                    map: map,
+                });
+                const marker4 = new google.maps.Marker({
+                    position: { lat: -33.761111, lng: 25.399711 },
+                    map: map,
+                });
+            }
+        </script>
+       
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBls7GQj22j5_64o27FcrIx9gAhA-1y9S4&callback=initMap&v=weekly"
+                async></script>
+    </div>
+</body>
+
+

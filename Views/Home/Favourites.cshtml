@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "Favourites";
+}
+<style>
+    h1 {
+        text-align: center;
+        font-family: 'Times New Roman';
+    }
+    p{
+        font-family: 'Times New Roman';
+        text-align: center;
+    }
+    .wrapper {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        padding-bottom: 20px;
+    }
+
+    .grid-item1 {
+        padding-right: 25px;
+       
+    }
+
+    .grid-item2 {
+        padding-right: 25px;
+    }
+
+    .grid-item4{
+        padding-top: 30px;
+        padding-right: 25px;
+      
+    }
+
+    .grid-item5 {
+        padding-top: 30px;
+        padding-right: 25px;
+    }
+
+    .grid-item6 {
+        padding-top: 30px;
+    }
+    .comic {
+        -webkit-box-shadow: 13px 3px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 13px 3px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 13px 3px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .comic-text{
+        padding-top: 10px;
+    }
+</style>
+<body style="background-color: antiquewhite;">
+    <h1>Welcome</h1>
+    <p style="font-size: 20px;">On this page you will find a collection of our favourite comics, we hope the selection inspires you to transport
+    to these incredible worlds and get to know some of the awe inspiring characters that live inside them. Enjoy.</p>
+
+    <div class="wrapper">
+        <div class="grid-item1">
+            <img class="comic" src="~/Images/comic1.jpg" height="95%" width="95%"/>
+            <p class="comic-text"><strong>#1</strong> Adventures of Batman and Robin<br />
+            Price: R120.00</p>
+        </div>
+        <div class="grid-item2">
+            <img class="comic"src="~/Images/comic-2.jpg" height="95%" width="95%" />
+            <p class="comic-text">
+                <strong>#2</strong> Avengers Assemble<br />
+                Price: R180.00
+            </p>
+        </div>
+        <div class="grid-item3">
+            <img class="comic" src="~/Images/comic-3.jpg" height="95%" width="95%" />
+            <p class="comic-text">
+                <strong>#3</strong> Avengers Disassembled<br />
+                Price: R150.00
+            </p>
+        </div>
+        <div class="grid-item4">
+            <img class="comic" src="~/Images/comic4.jpg" height="95%" width="95%" />
+            <p class="comic-text">
+                <strong>#4</strong> Fantastic 4<br />
+                Price: R150.00
+            </p>
+        </div>
+        <div class="grid-item5">
+            <img class="comic" src="~/Images/comic5.jpg" height="95%" width="95%" />
+            <p class="comic-text">
+                <strong>#5</strong> Batman<br />
+                Price: R120.00
+            </p>
+        </div>
+        <div class="grid-item6">
+            <img class="comic" src="~/Images/comic-6.jpg" height="95%" width="95%" />
+            <p class="comic-text">
+                <strong>#6</strong> Marvel Adventures: SpiderMan<br />
+                Price: R200.00
+            </p>
+        </div>
+    </div>
+</body>
+
